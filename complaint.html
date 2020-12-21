@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <title>Complaint Box</title>
+
+    <style>
+    form {
+        width: 400px;
+        margin: 50px auto;
+      }
+      input[type="text"] {
+     display: block;
+     width: 400px;
+    margin: 0 0 20px;
+    padding: 8px 12px 10px 12px;
+    border: 1px solid rgba(0,0,0,.5);
+        background: rgba(0,0,0,.25);
+    }
+
+    textarea {
+  display: block;
+  width: 400px;
+  height: 150px;
+  margin: 0 0 20px;
+  padding: 8px 12px 10px 12px;
+  border: 1px solid rgba(0,0,0,.5);
+  background: rgba(0,0,0,.25);
+    }
+
+.radio {
+  position: relative;
+  display: inline-block;
+  margin: 0 20px 20px 0;
+}
+
+.radio input[type="radio"] {
+  vertical-align: middle;
+  opacity: 0;
+}
+
+.radio label {
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.radio input[type="radio"] + label:before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: -3px 5px 0 -15px;
+  vertical-align: middle;
+  font-size: 14px;
+  font-family: fontawesome;
+  line-height: 19px;
+  text-align: center;
+  border: 1px solid rgba(0,0,0,.5);
+  background: rgba(0,0,0,.25);
+}
+
+.radio input[type="radio"] + label:before {
+  border-radius: 50%;
+}
+
+.radio input[type="radio"]:hover + label:before {
+  content: '\f111';
+  font-size: 9px;
+  color: rgba(255,255,255,.4);
+}
+
+.radio input[type="radio"]:checked + label:before {
+  content: '\f111';
+  font-size: 9px;
+  color: rgba(255,255,255,.8);
+}
+input[type="submit"] {
+  display: block;
+  width: 150px;
+  margin: 0 0 20px;
+  padding: 8px 0 10px 0;
+  text-align: center;
+  border: 1px solid rgba(0,0,0,.5);
+  background: rgba(0,0,0,.25);
+}
+      </style>
+  </head>
+  <body id="top">
+    <section class="header_menu" id="header_menu">
+        <div class="container-fluid px-0 shadow">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    Election
+  </a>
+  
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="registerationComplete.html">Register to vote <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="complaint.html">Complaints</a>
+      </li>
+     
+      <li class="nav-item">
+        <a class="nav-link " href="codeOfCoduct.html"  >Code of Conduct</a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link " href="faq2.html"  >FAQ`s</a>
+      </li>
+
+
+    </ul>
+    <div class="search mr-3">
+            <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+
+        <a href="search.html" class="btn btn-sm btn-outline-primary">
+            Search
+        </a>
+    </form>
+    </div>
+   
+   
+</div>
+</nav>
+</section><br><br>
+
+<!--complaint box-->
+<section class="container">
+  <div class="container"><h2 style="text-align: center;">Complaint/Suggestion Box</h2></div>
+<form>
+    <div class="radio">
+      <input id="value1" type="radio" name="radio1" />
+      <label for="value1"></label><i class="fas fa-male"></i>
+    </div>
+    <div class="radio">
+      <input id="value2" type="radio" name="radio1" />
+      <label for="value2" ></label><i class="fas fa-female"></i>
+    </div>
+    <input type="text" placeholder="Name" />
+    <input type="text" placeholder="Mail" />
+    <input type="text" placeholder="Phone" />
+    <div class="radio">
+      <input id="value3" type="radio" name="radio2" />
+      <label for="value3">Issue</label>
+    </div>
+    <div class="radio">
+      <input id="value4" type="radio" name="radio2" />
+      <label for="value4">Suggestion</label>
+    </div>
+    <div class="radio">
+      <input id="value5" type="radio" name="radio2" />
+      <label for="value5">Complaint</label>
+    </div>
+    <textarea placeholder="Your Message" style="font-family: inherit; font-size: 100%;vertical-align: baseline;border: 0; outline: 0;color: #fff;"></textarea>
+    <input type="submit" value="Send" />
+  </form>
+</section>
+
+
+
+<section class="footer_section pt-5 pb-2" style="background-color:rgb(241, 240, 240);"  id="footer_section">
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <div class=col-md-3 col-6 pl-5 pl-small-15>
+            <div class="footer_title " style="margin-left:25px;">
+              <a href="index.html" class="text-center" style="text-align:center;"> <br><h3>Election Commision Of India </h3><br></a>
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="footer_title pt-3 mb-3">
+              <h3>Quick Links</h3>
+            </div>
+            <div class="footer_links">
+              <ul>
+                <li><a href="about.html" style="color: black;">Register to vote</a></li>
+                <li><a href="javascript:;" class="text-dark">Complaints</a></li>
+                <li><a href="javascript:;" class="text-dark">Code of Conduct</a></li>
+                <li><a href="contact.html"class="text-dark">Results</a></li>
+               
+
+              </ul>
+             </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="footer_title pt-3 mb-3">
+            <h3>Contact Us</h3>
+            </div>
+            <div class="footer_links">
+              <ul>
+                <li><a href="women.html" class="text-dark">Mail At  <i class="fas fa-envelope-open fa"></i></a></li>
+                <li><a href="men.html" class="text-dark">24X7 Support  <i class="far fa-life-ring fa"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="footer_title pt-3 mb-3">
+              <h3>Support</h3>
+            </div>
+            <div class="footer_links">
+              <ul>
+                <li><a href="javascript:;" class="text-dark"  >Frequently asked questions</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      </footer>
+  </section>
+      
+      <div class="container-fluid ">
+        <div class="row" >
+  <div class="backtop col" >
+    <a id="button" href="#top" class="btn btn-sm btn-outline-danger" role="button">
+      <i class="fas fa-chevron-up text-dark"></i>
+    </a>
+  </div>
+    <div class="col" >
+      <h6 class="text-right mt-3">Copyright ©2020 All rights reserved&nbsp;&nbsp;&nbsp;</h6>
+    </div>
+  </div>
+  </div>
+  
+  
+  
+    
+  
+      <!-- Optional JavaScript; choose one of the two! -->
+  
+      <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    </body>
+  </html>

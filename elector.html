@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" />
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <title>Voting</title>
+    <style>
+   input[type=submit],input[type=reset]{
+  background-color: #3CBC8D;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+    
+    input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  background-color: #3CBC8D;
+  color: white;
+}
+        table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+    </style>
+  </head>
+  <body id="top">
+    <section class="header_menu" id="header_menu">
+        <div class="container-fluid px-0 shadow">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    Election
+
+
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="registerationComplete.html">Register to vote <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="complaint.html">Complaints</a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link " href="codeOfCoduct.html"  >Code of Conduct</a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link " href="faq2.html"  >FAQ`s</a>
+      </li>
+
+
+
+    </ul>
+    <div class="search mr-3">
+            <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+
+        <a href="search.html" class="btn btn-sm btn-outline-primary">
+            Search
+        </a>
+    </form>
+    </div>
+   
+</div>
+</nav>
+</section>
+
+<div class="container-fluid">
+<form action="electorAction.jsp" method="POST">
+   <input type="text" name="voterNumber" placeholder="Voter-ID" >
+    <tr>
+    <table table-border=border>
+        <th>
+            Name
+        </th>
+        <th>
+            Abbrevation
+        </th>
+        <th>
+            Foundation Year
+        </th>
+        <th>
+            Founder(s)
+        </th>
+        <th>
+            Party Supremo
+        </th>
+        <th>
+            Party Symbol
+        </th>
+        <th>
+            Voting button
+        </th>
+        </tr>
+        <tr>
+            <td>
+                All India Trinamool Congress
+            </td>
+            <td>
+                AITC
+            </td>
+            <td>
+                1998
+            </td>
+            <td>
+              <ul>
+               <li> Mamata Banerjee</li>
+               </ul>
+            </td>
+            <td>
+                Mamata Banerjee
+            </td>
+            <td>
+              
+                <img src="aitc.png" alt="aitc" width="100px" height="100px" >
+               
+            </td>
+            <td>
+                <input type="radio" id="aitc" name="party" value="aitc">
+            </td>
+        </tr>
+        <tr>
+            <td>Bahujan Samaj Party</td>
+            <td>BSP</td>
+            <td>1984</td>
+            <td><ul><li>Kanshi Raj</li></ul></td>
+            <td>Mayawati</td>
+            <td> 
+              <img src="bsp.png" alt="bsp" width="100px" height="100px">
+            </td>
+            <td><input type="radio" id="bsp" name="party" value="bsp"></td>
+        </tr>
+        <tr>
+            <td>Bharatiye Janata Party</td>
+            <td>BJP</td>
+            <td>1980</td>
+            <td><ul>
+                <li>Syama Prasad Mukherjee</li>
+                <li>Bhairon Singh Shekhawat</li>
+                <li>Atal Bihari Vajpayee</li>
+                <li>L.K.Advani</li>
+            </ul></td>
+            <td>Jagat Prakash Nadda</td>
+            <td>
+              <img src="bjp.png" alt="bjp" width="100px" height="100px">
+            </td>
+            <td>
+                <input type="radio" id="bjp" name="party" value="bjp">
+            </td>
+           </tr>
+           <tr>
+               <td>Communist Party of India</td>
+               <td>CPI</td>
+               <td>1925</td>
+               <td></td>
+               <td>D.Raja</td>
+               <td>
+                 <img src="cpi.png" alt="cpi" height="100px" width="100px">
+               </td>
+               <td><input type="radio" id="cpi" name="party" value="cpi">
+           </tr>
+           <tr>
+               <td>
+                   Communist Party of India(Marxist)
+               </td>
+               <td>
+                   CPI(M)
+               </td>
+               <td>
+                   1964
+               </td>
+               <td>
+                   <ul>
+                       <li>
+                           P.Sundarayya
+                       </li>
+                       <li>E.M.S</li>
+                       <li>Namboodiripad</li>
+                       <li>Jyoti Basu</li>
+                   </ul>
+               </td>
+               <td>
+                   Sitaram Yechury
+               </td>
+               <td>
+                 <img src="300px-CPI-M-flag.svg.png" alt="cpim" width="100px" height="100px">
+               </td>
+               <td><input type="radio" id="cpim" name="party" value="cpim"></td>
+           </tr>
+           <tr>
+               <td>Indian National Congress</td>
+               <td>INC</td>
+               <td>1885</td>
+               <td><ul>
+                   <li>Allan Octavian Hume</li>
+                   <li>Dadabhai Naoroji</li>
+                   <li>DInshaw Wacha</li>
+                   <li>Womesh Chunder Bonnerjee</li>
+               </ul></td>
+               <td>Sonia Gandhi(Interim President)</td>
+               <td>
+                 <img src="inc.png" alt="inc" width="100px" height="100px">
+               </td>
+               <td>
+                   <input type="radio" id="inc" name="party" value="inc">
+               </td>
+           </tr>
+           <tr>
+               <td>
+               National's People Party
+               </td>
+               <td>
+                   NPP
+               </td>
+               <td>2013</td>
+               <td>
+                 <ul><li>P.A Sangma</li></ul></td>
+               <td>Conrad Sangma</td>
+               <td>
+                 <img src="npp.png" alt="npp" width="100px" height="100px">
+               </td>
+               <td>
+                   <input type="radio" name="party" id="npp" value="npp">
+               </td>
+           </tr>
+           <tr>
+               <td>Nationalist Congress Party</td>
+               <td>NCP</td>
+               <td>1999</td>
+               <td>
+                   <ul>
+                       <li>Sharad Pawar</li>
+                       <li>P.A Sangma</li>
+                       <li>
+                           Tariq Anwar
+                       </li>
+                   </ul>
+               </td>
+               <td>Sharad Pawar</td>
+               <td>
+                 <img src="300px-Flag_of_Nationalist_Congress_Party.svg.png" alt="ncp" width="100px" height="100px">
+               </td>
+               <td>
+                   <input type="radio" name="party" id="ncp" value="ncp">
+               </td>
+           </tr>
+         
+    </table>
+        <input type="submit"> <input type="reset">
+    </form>
+</div>
+
+
+<section class="footer_section pt-5 pb-2" style="background-color:rgb(241, 240, 240);"  id="footer_section">
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <div class=col-md-3 col-6 pl-5 pl-small-15>
+            <div class="footer_title " style="margin-left:25px;">
+              <a href="index.html" class="text-center" style="text-align:center;"> <br><h3>Election Commision Of India </h3><br></a>
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="footer_title pt-3 mb-3">
+              <h3>Quick Links</h3>
+            </div>
+            <div class="footer_links">
+              <ul>
+                <li><a href="about.html" style="color: black;">Register to vote</a></li>
+                <li><a href="javascript:;" class="text-dark">Complaints</a></li>
+                <li><a href="javascript:;" class="text-dark">Code of Conduct</a></li>
+                <li><a href="contact.html"class="text-dark">Results</a></li>
+               
+
+              </ul>
+             </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="footer_title pt-3 mb-3">
+            <h3>Contact Us</h3>
+            </div>
+            <div class="footer_links">
+              <ul>
+                <li><a href="women.html" class="text-dark">Mail At  <i class="fas fa-envelope-open fa"></i></a></li>
+                <li><a href="men.html" class="text-dark">24X7 Support  <i class="far fa-life-ring fa"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="footer_title pt-3 mb-3">
+              <h3>Support</h3>
+            </div>
+            <div class="footer_links">
+              <ul>
+                <li><a href="javascript:;" class="text-dark"  >Frequently asked questions</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      </footer>
+  </section>
+      
+      <div class="container-fluid ">
+        <div class="row" >
+  <div class="backtop col" >
+    <a id="button" href="#top" class="btn btn-sm btn-outline-danger" role="button">
+      <i class="fas fa-chevron-up text-dark"></i>
+    </a>
+  </div>
+    <div class="col" >
+      <h6 class="text-right mt-3">Copyright ©2020 All rights reserved&nbsp;&nbsp;&nbsp;</h6>
+    </div>
+  </div>
+  </div>
+  
+  
+  
+    
+  
+      <!-- Optional JavaScript; choose one of the two! -->
+  
+      <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    </body>
+  </html>

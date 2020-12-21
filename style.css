@@ -1,0 +1,94 @@
+body {
+    background:url('ungli.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 80%;
+    
+}
+    .page{
+
+     background-color:rgba(211, 211, 211, 0.342);
+          border:1px ;
+    margin:160px auto;
+    padding:20px;
+    width:500px;
+    height:450px; 
+    font-family:arial;
+              }
+
+
+.page input[type="submit"]{	
+    padding:5px;
+    width:75%;
+    
+    background-color:#2e2f7e;
+    color:white;
+    border-radius:1px;
+    border-color:#2e2f7e;
+                
+}
+.page input[type="button"]{
+    padding:5px;
+    width:75%;
+    height:35px;
+    font-size:12px;
+    
+}
+.page input[type="text"]{
+  
+    padding:5px;
+    width:75%;
+    height:40px;
+    font-size:15px;
+     
+}
+
+.panel {
+  background-color:rgb(29, 20, 20) ;
+  padding: 15px;
+
+    font-size: 35px;
+  color: white;
+ 
+  padding-right: 40px;
+padding-left:250px;
+padding-top:30px;
+
+  }
+.panel input[type="button"]{
+    padding:4px;
+    width:12%;
+    border-radius:2px;
+    border-color:#3aba21;
+                    background-color:#3aba21;
+    color:white;
+    vertical-align:text-bottom;
+    text:bold;
+    height:4%;
+    font-size:12px;
+}
+#button{
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+    z-index: 100;
+}
+.form { 
+    margin: 0 auto; 
+    width: 100px; 
+    color: black;
+} 
+.footer_links ul li{
+    list-style: none;
+}
+.footer_links ul li a{
+    text-decoration: none;
+    transition: all 0.2s linear;
+}
+.footer_links ul li a:hover{
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+
+
+  
